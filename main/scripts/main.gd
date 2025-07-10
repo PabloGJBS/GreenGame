@@ -59,7 +59,6 @@ func addCommunityKnowledgeGems(value):
 	
 func changePlayerSkin(playerSkinString):
 	player.setPlayerSkin(playerSkinString)
-	$"Timer-rodada".start()
 	$"Timer-miniGame-Fishing".start()
 	$"Timer-Restaurant-minigame".start()
 	menuWaitingRoom.hide()
@@ -129,7 +128,7 @@ func moving_player(cityDestiny : City):
 		$"Wrong question- AudioStreamPlayer2D".play()
 		
 	
-func _on_timer_timeout_rodada():
+func botao_avancar_rodada():
 	player.addflights(2)
 	$"Label-plane".text = str(player.getflights())
 	
@@ -237,7 +236,6 @@ func _on_button_k_gem_pressed():
 
 
 func _on_timermini_game_fishing_timeout():
-	$"Timer-rodada".paused = true
 	miniGameFishing.show()
 	
 
@@ -247,21 +245,17 @@ func _on_buttonstore_pressed():
 func fishingMiniGameEnded(coinsGained):
 	$"Activity Reward - AudioStreamPlayer2D".play()
 	player.addcoins(coinsGained)
-	$"Label-coins".text = str(player.getcoins())
-	$"Timer-rodada".paused = false
-	
+	$"Label-coins".text = str(player.getcoins())	
 	$"Timer-miniGame-Fishing".free()
 	$menu_waiting_room.free()
 	
 func _on_timer_restaurantminigame_timeout():
-	$"Timer-rodada".paused = true
 	$minigame_restaurant_tutorial.show()
 	
 func restaurantMiniGameEnded(coinsGained):
 	$"Activity Reward - AudioStreamPlayer2D".play()
 	player.addcoins(coinsGained)
 	$"Label-coins".text = str(player.getcoins())
-	$"Timer-rodada".paused = false
 	
 	$Minigame_fishing_tutorial.free()
 	$"Timer-Restaurant-minigame".free()

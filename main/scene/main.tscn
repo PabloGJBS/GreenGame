@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bp2ppe726u58s"]
+[gd_scene load_steps=55 format=3 uid="uid://bp2ppe726u58s"]
 
 [ext_resource type="Script" path="res://main/scripts/main.gd" id="1_nm1lt"]
 [ext_resource type="Texture2D" uid="uid://dhtucd1d5ertp" path="res://assets/backgrounds/Imagem real - laranja.png" id="2_lntdg"]
@@ -9,9 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://dqanm1fmjmcp0" path="res://assets/icons/icon-kgem.png" id="6_yggkq"]
 [ext_resource type="Texture2D" uid="uid://db2ayu2hawd7a" path="res://assets/icons/info-mini-tutorial.png" id="7_gf3sv"]
 [ext_resource type="PackedScene" uid="uid://bkqljm64dmb5f" path="res://player/scene/Player.tscn" id="8_kqbl1"]
-[ext_resource type="Texture2D" uid="uid://bcpvrq0f5x76n" path="res://assets/buttons/icon-community.png" id="9_s6gus"]
+[ext_resource type="Texture2D" uid="uid://cfsect668ukx5" path="res://assets/icons/fluent_people-community-16-regular.png" id="9_7tqvd"]
 [ext_resource type="Texture2D" uid="uid://cnsasb136o0t1" path="res://assets/icons/store.png" id="10_v1w7y"]
 [ext_resource type="Texture2D" uid="uid://bblkgm5ls4wm2" path="res://assets/icons/ic_twotone-business-center.png" id="11_cvqbh"]
+[ext_resource type="Texture2D" uid="uid://6mqycdurtyrx" path="res://assets/icons/fast_forward.png" id="12_845u0"]
 [ext_resource type="Texture2D" uid="uid://dnnawuio3n54y" path="res://assets/termometro.png" id="13_ucqvj"]
 [ext_resource type="PackedScene" uid="uid://bemq4w1sjg5wy" path="res://Alerts/painel_no_money_to_activity.tscn" id="14_aur3v"]
 [ext_resource type="Texture2D" uid="uid://bdgshccav4ybt" path="res://assets/backgrounds/Rectangle 90.png" id="14_blvmw"]
@@ -54,29 +55,36 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l51ge"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vx0w4"]
+bg_color = Color(0.831373, 0.192157, 0.215686, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnlif"]
-bg_color = Color(1, 0.545098, 0.0117647, 1)
+bg_color = Color(0.94902, 0.631373, 0.0117647, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sltb1"]
-bg_color = Color(1, 0.6, 0.254902, 1)
+bg_color = Color(1, 0.72549, 0.333333, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1dn2"]
-bg_color = Color(0.886275, 0.478431, 0, 1)
+bg_color = Color(0.839216, 0.552941, 0.00392157, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1fs3"]
-bg_color = Color(0.380392, 0.67451, 0.27451, 1)
+bg_color = Color(0.364706, 0.364706, 0.364706, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -117,6 +125,13 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcprj"]
+bg_color = Color(0.380392, 0.67451, 0.27451, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_nm1lt")
 
@@ -129,9 +144,6 @@ region_filter_clip_enabled = true
 modulate = Color(0.0627451, 0.0627451, 0.0627451, 0.52549)
 offset_right = 1152.0
 offset_bottom = 74.0
-
-[node name="Timer-rodada" type="Timer" parent="."]
-wait_time = 60.0
 
 [node name="Label-plane" type="Label" parent="."]
 offset_left = 672.0
@@ -205,11 +217,10 @@ icon = ExtResource("7_gf3sv")
 expand_icon = true
 
 [node name="Button-chat" type="Button" parent="."]
-visible = false
-offset_left = 29.0
-offset_top = 387.0
-offset_right = 99.0
-offset_bottom = 457.0
+offset_left = 19.0
+offset_top = 376.0
+offset_right = 89.0
+offset_bottom = 446.0
 theme_override_colors/icon_pressed_color = Color(1, 1, 1, 0.67451)
 theme_override_colors/icon_hover_color = Color(1, 1, 1, 0.803922)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gadrj")
@@ -222,27 +233,26 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="Button-community" type="Button" parent="."]
-visible = false
-offset_left = 32.0
-offset_top = 479.0
-offset_right = 102.0
-offset_bottom = 549.0
+offset_left = 20.0
+offset_top = 462.0
+offset_right = 90.0
+offset_bottom = 532.0
 theme_override_colors/icon_pressed_color = Color(1, 1, 1, 0.67451)
 theme_override_colors/icon_hover_color = Color(1, 1, 1, 0.803922)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_gadrj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vx0w4")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_2p87m")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_46ken")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_fo5b1")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_l51ge")
-icon = ExtResource("9_s6gus")
+icon = ExtResource("9_7tqvd")
 icon_alignment = 1
 expand_icon = true
 
 [node name="Button-store" type="Button" parent="."]
-offset_left = 71.0
-offset_top = 398.0
-offset_right = 147.0
-offset_bottom = 474.0
+offset_left = 116.0
+offset_top = 456.0
+offset_right = 192.0
+offset_bottom = 532.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_bnlif")
 theme_override_styles/hover = SubResource("StyleBoxFlat_sltb1")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_e1dn2")
@@ -252,10 +262,10 @@ icon = ExtResource("10_v1w7y")
 icon_alignment = 1
 
 [node name="Button-activity" type="Button" parent="."]
-offset_left = 67.0
-offset_top = 516.0
-offset_right = 141.0
-offset_bottom = 590.0
+offset_left = 118.0
+offset_top = 552.0
+offset_right = 192.0
+offset_bottom = 626.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_l1fs3")
 theme_override_styles/hover = SubResource("StyleBoxFlat_atv8y")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1pdyn")
@@ -266,10 +276,10 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="Button-KGem" type="Button" parent="."]
-offset_left = 151.0
-offset_top = 471.0
-offset_right = 221.0
-offset_bottom = 541.0
+offset_left = 23.0
+offset_top = 555.0
+offset_right = 93.0
+offset_bottom = 625.0
 theme_override_colors/icon_pressed_color = Color(1, 1, 1, 0.67451)
 theme_override_colors/icon_hover_color = Color(1, 1, 1, 0.803922)
 theme_override_styles/normal = SubResource("StyleBoxFlat_btpcf")
@@ -278,6 +288,20 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_yw3bh")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_fo5b1")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_l51ge")
 icon = ExtResource("6_yggkq")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button-PassTurn" type="Button" parent="."]
+offset_left = 986.0
+offset_top = 546.0
+offset_right = 1056.0
+offset_bottom = 616.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wcprj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wcprj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wcprj")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_wcprj")
+theme_override_styles/focus = SubResource("StyleBoxFlat_wcprj")
+icon = ExtResource("12_845u0")
 icon_alignment = 1
 expand_icon = true
 
@@ -384,11 +408,11 @@ stream = ExtResource("35_ug64r")
 [node name="Temp increase - AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("36_5tjwi")
 
-[connection signal="timeout" from="Timer-rodada" to="." method="_on_timer_timeout_rodada"]
 [connection signal="pressed" from="Button-mini-tutorial" to="." method="_on_buttonminitutorial_pressed"]
 [connection signal="pressed" from="Button-store" to="." method="_on_buttonstore_pressed"]
 [connection signal="pressed" from="Button-activity" to="." method="_on_activity_list_button_pressed"]
 [connection signal="pressed" from="Button-KGem" to="." method="_on_button_k_gem_pressed"]
+[connection signal="pressed" from="Button-PassTurn" to="." method="botao_avancar_rodada"]
 [connection signal="value_changed" from="Termometro" to="." method="_on_termometro_value_changed"]
 [connection signal="timeout" from="Timer-miniGame-Fishing" to="." method="_on_timermini_game_fishing_timeout"]
 [connection signal="timeout" from="Timer-Restaurant-minigame" to="." method="_on_timer_restaurantminigame_timeout"]
