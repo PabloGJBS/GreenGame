@@ -2,12 +2,14 @@ extends Node2D
 
 @onready var player = $Player
 @onready var worldMap = $WorldMap
-@onready var activityPainel = $Activitylists
-@onready var jornalPainel = $JornalPainel
-@onready var planeAlert = $PlaneAlert
+@onready var activityPainel = $painel_activity
+@onready var jornalPainel = $painel_jornal
+@onready var planeAlert = $painel_plane_alert
+@onready var NoMoneyActivityAlert = $Painel_no_money_to_activity
+
+#@onready var gameOverLostScene = load("res://GameOver/Lost.tscn")
 
 var csv_file_path_cities: String = "res://Data/Mapa/Lista de atividades - Mapa.csv"
-
 
 var globalTemperature : float = 1.25
 var communityKnowledgeGems : int
@@ -19,7 +21,7 @@ func addGlobalTemperature(value : float):
 	globalTemperature = globalTemperature + value
 	$Termometro.value = globalTemperature
 	if (globalTemperature > 4):
-		get_tree().change_scene_to_file("res://GameOver/Lost.tscn")
+		get_tree().change_scene_to_file.bind("res://GameOver/Lost.tscn").call_deferred()
 	
 func getcommunityKnowledgeGems():
 	return communityKnowledgeGems
@@ -28,13 +30,13 @@ func setcommunityKnowledgeGems(value):
 	communityKnowledgeGems = value
 		
 func _ready():
-	load("res://GameOver/Lost.tscn")
-	
 	$"Label-plane".text = str(player.getflights())
 	$"Label-coins".text = str(player.getcoins())
 	$"Label-kgem".text = str(player.getknowledgeGems())
 	
 	worldMap.cityButtonPressed.connect(moving_player)
+	
+	activityPainel.connect("activityPlayObject",dealPlayActivity)
 	
 	player.connect("playerChangedCity", activityPainel.setPlayerCurrentCity)
 	
@@ -109,6 +111,16 @@ func dealJornalConsequences (jornal : Jornal):
 				coins = coins + jornal.coinsConsequence
 				player.setcoins(coins)
 	$"Label-coins".text = str(player.getcoins())
+	
+func dealPlayActivity(activity : Activity):
+	print("chegou na deal")
+	if player.coins >= activity.priceCoins:
+		var newValue = player.getcoins() - activity.priceCoins
+		player.setcoins(newValue)
+		$"Label-coins".text = str(player.getcoins())
+		
+	else:
+		NoMoneyActivityAlert.show_alert()
 
 func _on_activity_list_button_pressed():
 	activityPainel.visible = true
