@@ -86,11 +86,11 @@ func moving_player(cityDestiny : City):
 	
 func _on_timer_timeout_rodada():
 	
-	var flightsAvailable =  player.getflights() + 3
+	var flightsAvailable =  player.getflights() + 2
 	player.setflights(flightsAvailable)
 	$"Label-plane".text = str(player.getflights())
 	
-	var valuecoins = player.getcoins() + 7
+	var valuecoins = player.getcoins() + 5
 	player.setcoins(valuecoins)
 	$"Label-coins".text = str(player.getcoins())
 	
@@ -130,6 +130,8 @@ func dealEndQuiz(result):
 		quizWrongQuestion.show_alert()
 	elif result == "ok":
 		activityStarted.show_alert()
+		
+		#colocar a atividade como unavailable
 		#colocar a atividade em minhas do player
 		# soltar o timer da recompensa
 		#a Minhas atividades puxa de player
@@ -142,3 +144,7 @@ func _on_activity_list_button_pressed():
 
 func _on_buttonminitutorial_pressed():
 	$"Mini-tutorial".visible = true
+
+
+func _on_termometro_value_changed(value):
+	$"Label -temp".text = str(value) + " ºC"

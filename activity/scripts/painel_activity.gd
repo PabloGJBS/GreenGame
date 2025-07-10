@@ -20,7 +20,7 @@ signal activityPlayObject (activityId)
 func _ready():
 	self.visible = false
 	setTitle("Atividades")
-	var csv_file_path_activities: String = "res://Data/Lista de atividades/Lista de atividades - Copy of ALL (2).csv"
+	var csv_file_path_activities: String = "res://Data/Lista de atividades/Lista de atividades - ALL.csv"
 	_data_extraction(csv_file_path_activities)
 	_on_buttonglobal_pressed()
 
@@ -31,6 +31,7 @@ func _data_extraction(csv_file_path_activities):
 	else:
 		print("consegui abrir o arquivo de atividades")
 		var _header = file.get_csv_line()
+		_header = file.get_csv_line()
 		while !file.eof_reached():
 			var line = file.get_csv_line()
 			if len(line) >= 2:
@@ -63,6 +64,8 @@ func abaGlobal():
 	var y = 0
 	for activity in allActivities:
 		var activityRect = createRect(activity,y)
+		if not activity.available:
+			activityRect.activityUnavailable()
 		vboxGlobal.add_child(activityRect)
 		y = y + 290 #setting the position
 
