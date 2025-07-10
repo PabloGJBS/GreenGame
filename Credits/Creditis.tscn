@@ -1,0 +1,108 @@
+[gd_scene load_steps=14 format=3 uid="uid://cjhkmkcqrlmp5"]
+
+[ext_resource type="Texture2D" uid="uid://b7gol14ti4dcr" path="res://assets/backgrounds/creditosbackground.png" id="1_bgf16"]
+[ext_resource type="FontFile" uid="uid://x68u5rsd0n4f" path="res://assets/fonts/Bungee-Regular.ttf" id="2_4ckot"]
+[ext_resource type="Script" path="res://Credits/credits.gd" id="3_32mh7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_na21t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0xni1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v8ugj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xw0uf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sp3ad"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0rhs5"]
+bg_color = Color(0.478431, 0.941176, 0.313726, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6w6q7"]
+bg_color = Color(0.560784, 0.976471, 0.423529, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7paoi"]
+bg_color = Color(0.439216, 0.87451, 0.278431, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5sse8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwoqd"]
+
+[node name="Creditis" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -71.0
+offset_top = -42.0
+offset_right = 1377.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="Creditosbackground" type="Sprite2D" parent="."]
+position = Vector2(426, 498)
+scale = Vector2(0.795573, 0.833984)
+texture = ExtResource("1_bgf16")
+
+[node name="Greengame" type="Label" parent="."]
+offset_left = 6.0
+offset_top = 16.0
+offset_right = 342.0
+offset_bottom = 137.0
+theme_override_colors/font_color = Color(0.478431, 0.941176, 0.313726, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4ckot")
+theme_override_font_sizes/font_size = 58
+text = "Créditos:
+
+"
+
+[node name="tutorial" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 112.0
+offset_right = 1099.0
+offset_bottom = 204.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.827451, 0.827451, 0.827451, 1)
+theme_override_colors/font_hover_color = Color(0.92549, 0.92549, 0.92549, 1)
+theme_override_fonts/font = ExtResource("2_4ckot")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxEmpty_na21t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0xni1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v8ugj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xw0uf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sp3ad")
+text = "Ana Carolina Costa César
+Pablo Guilherme de Jesus Batista Silva"
+alignment = 0
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 807.0
+offset_top = 477.0
+offset_right = 1084.0
+offset_bottom = 549.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4ckot")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_0rhs5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6w6q7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7paoi")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5sse8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dwoqd")
+text = "Recomeçar"
+script = ExtResource("3_32mh7")
+
+[connection signal="pressed" from="Restart" to="Restart" method="_on_restart_pressed"]

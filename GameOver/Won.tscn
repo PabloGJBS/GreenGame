@@ -68,11 +68,30 @@ Faça atividades, confira o que não é greenwashing e ganhe muitas gemas do con
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Restart" type="Button" parent="."]
-offset_left = 392.0
+[node name="Credits" type="Button" parent="."]
+offset_left = 249.0
 offset_top = 504.0
-offset_right = 768.0
+offset_right = 508.0
 offset_bottom = 576.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_cpp8w")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_pp8lo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_16frv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xvm3n")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3sa08")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2xkhw")
+text = "Créditos"
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 625.0
+offset_top = 503.0
+offset_right = 902.0
+offset_bottom = 575.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -90,4 +109,5 @@ text = "Recomeçar"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_41gfu")
 
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

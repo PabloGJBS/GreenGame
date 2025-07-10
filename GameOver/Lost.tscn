@@ -79,11 +79,30 @@ text = "Game (and life) OVER"
 horizontal_alignment = 1
 autowrap_mode = 3
 
+[node name="Credits" type="Button" parent="."]
+offset_left = 187.0
+offset_top = 486.0
+offset_right = 563.0
+offset_bottom = 558.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_0srji")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_i1uae")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gm46r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hh6pg")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_puogq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t2ie8")
+text = "Creditos"
+
 [node name="Restart" type="Button" parent="."]
-offset_left = 392.0
-offset_top = 496.0
-offset_right = 768.0
-offset_bottom = 568.0
+offset_left = 611.0
+offset_top = 488.0
+offset_right = 987.0
+offset_bottom = 560.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -101,4 +120,5 @@ text = "Recomeçar"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_q2iyc")
 
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
