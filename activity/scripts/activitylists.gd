@@ -1,11 +1,19 @@
 extends Node2D
 
 @onready var painel = $Painel
-@onready var vbox = $Painel/ScrollContainer/VBoxContainer
+@onready var vboxGlobal = $Painel/ScrollContainerGlobal/VBoxContainer
+@onready var vboxLocal = $Painel/ScrollContainerLocal/VBoxContainer
+@onready var buttonGlobal = $"Painel/Button-global"
+@onready var buttonLocal = $"Painel/Button-local"
+@onready var buttonMinhas = $"Painel/Button-minhas"
 
 var greenRectScene = load("res://activity/scenes/GreenRect.tscn")
 
 var allActivities = []
+var localActivities = []
+var playerActivities = []
+
+var playerCurrentCity
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -38,37 +46,90 @@ func _ready():
 				var activity = Activity.new(idf, titlef,priceCoinsf,numQuestActivityf,rewardCoinsf,rewardKnowledgeGemsf,temperatureRisef,timeToReadyf,rewardStoryf, cityf)
 				
 				allActivities.append(activity)
+				
+				if buttonGlobal.button_pressed:
+					abaGlobal()
 
 		file.close()
-	abaGlobal()
+	
+func setPlayerCurrentCity (newCity : City):
+	playerCurrentCity = newCity
 
 func abaGlobal():
+	$Painel/ScrollContainerLocal.visible = false
+	$Painel/ScrollContainerGlobal.visible = true
+	vboxGlobal.custom_minimum_size = Vector2(10,14500)
+	
+	#The separation constant in vboxContainer is not working at all
+	#For now, I will set the green rectangles position manually :|
+	
+	var y = 0
 	for activity in allActivities:
-		createRect(activity)
+		var activityRect = createRect(activity,y)
+		vboxGlobal.add_child(activityRect)
+		y = y + 290 #setting the position
 
-func abaLocal(id1 : int, id2 : int = 0, id3 : int = 0):
-	var activity = allActivities[id1]
-	createRect(activity)
-	
-	if id2 != 0:
-		activity = allActivities[id2]
-		createRect(activity)
-	
-	if id3 != 0:
-		activity = allActivities[id1]
-		createRect(activity)
 
-func createRect(activity : Activity):
-	var minready = (activity.timeToReady)/60
+#Como pegar o player? signal com argumento
+func abaLocal():
+	$Painel/ScrollContainerLocal.visible = true
+	$Painel/ScrollContainerGlobal.visible = false
+	var activitiesFromCity = playerCurrentCity.getCityActivities()
+	
+	#Defining the size of the page accordingly to the num of items
+	var sizeArray = activitiesFromCity.size()
+	var sizePag = sizeArray * 290
+	vboxLocal.custom_minimum_size = Vector2(10,sizePag)
+	
+	var y = 0
+	for i in activitiesFromCity:
+		var activity = allActivities[int(i) - 1]
+		var activityRect = createRect(activity, y)
+		vboxLocal.add_child(activityRect)
+		y = y + 290
+
+func abaMinhas():
+	$Painel/ScrollContainerLocal.visible = false
+	$Painel/ScrollContainerGlobal.visible = false
+	
+
+
+func createRect(activity : Activity, y):
 	var activityRect = greenRectScene.instantiate()
-	vbox.add_child(activityRect)
+	var minready = (activity.timeToReady)/60
+	
 	activityRect.setTitle(activity.title)
 	activityRect.setPrice("Custo: " + str(activity.priceCoins))
-	activityRect.setTime("Tempo de retorno: " + str(minready) + "Min")
+	activityRect.setTime("Tempo: " + str(minready) + " Min")
 	activityRect.setQuestions("Perguntas: " + str(activity.numQuestActivity))
 	activityRect.setCity(activity.city)
-	 
+	activityRect.position = Vector2(0,y) #setting the position
+	
+	return activityRect
+
 
 
 func _on_back_button_pressed():
 	self.visible = false
+	buttonGlobal.button_pressed = true
+	buttonLocal.button_pressed = false
+	buttonMinhas.button_pressed = false
+	abaGlobal()
+
+
+func _on_buttonglobal_pressed():
+	buttonLocal.button_pressed = false
+	buttonMinhas.button_pressed = false
+	abaGlobal()
+	
+
+func _on_buttonlocal_pressed():
+	buttonGlobal.button_pressed = false
+	buttonMinhas.button_pressed = false
+	abaLocal()
+
+
+func _on_buttonminhas_pressed():
+	buttonLocal.button_pressed = false
+	buttonGlobal.button_pressed = false
+	abaMinhas()
