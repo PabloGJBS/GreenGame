@@ -2,6 +2,7 @@ extends PainelGeral
 
 @onready var vboxGlobal = $ScrollContainerGlobal/VBoxContainer
 @onready var vboxLocal = $ScrollContainerLocal/VBoxContainer
+@onready var vboxMinhas = $ScrollContainerMinhas/VBoxContainer
 @onready var buttonGlobal = $"Button-global"
 @onready var buttonLocal = $"Button-local"
 @onready var buttonMinhas = $"Button-minhas"
@@ -12,7 +13,7 @@ var allActivities = []
 var localActivities = []
 var playerActivities = []
 
-var playerCurrentCity
+var currentPlayer
 
 signal activityPlayObject (activityId)
 
@@ -50,51 +51,94 @@ func _data_extraction(csv_file_path_activities):
 				allActivities.append(activity)
 		file.close()
 	
-func setPlayerCurrentCity (newCity : City):
-	playerCurrentCity = newCity
+func getPlayer (player : Player):
+	currentPlayer = player
 
 func abaGlobal():
 	$ScrollContainerLocal.visible = false
 	$ScrollContainerGlobal.visible = true
+	$ScrollContainerMinhas.visible = false
 	vboxGlobal.custom_minimum_size = Vector2(10,14500)
 	
 	#The separation constant in vboxContainer is not working at all
 	#For now, I will set the green rectangles position manually :|
+	#Defining the size of the page accordingly to the num of items
+	var sizeArray = allActivities.size()
+	var sizePag = sizeArray * 290
+	vboxGlobal.custom_minimum_size = Vector2(10,sizePag)
 	
-	var y = 0
+	var yg = 0
 	for activity in allActivities:
-		var activityRect = createRect(activity,y)
+		var activityRect = createRect(activity,yg)
 		if not activity.available:
 			activityRect.activityUnavailable()
 		vboxGlobal.add_child(activityRect)
-		y = y + 290 #setting the position
+		yg = yg + 290 #setting the position
 
 func abaLocal():
 	$ScrollContainerLocal.visible = true
 	$ScrollContainerGlobal.visible = false
-	var activitiesFromCity = playerCurrentCity.getCityActivities()
+	$ScrollContainerMinhas.visible = false
+	var activitiesFromCity = currentPlayer.playercurrentCity.getCityActivities()
 	
 	#Defining the size of the page accordingly to the num of items
 	var sizeArray = activitiesFromCity.size()
 	var sizePag = sizeArray * 290
 	vboxLocal.custom_minimum_size = Vector2(10,sizePag)
 	
-	var y = 0
+	var yl = 0
 	for i in activitiesFromCity:
-		var activity = allActivities[int(i) - 1]
-		var activityRect = createRect(activity, y)
+		var activity = allActivities[int(i) -1]
+		var activityRect = createRect(activity, yl)
 		
 		if not activity.available:
 			activityRect.activityUnavailable()
 		else:
 			activityRect.showButtonPlay()
 		vboxLocal.add_child(activityRect)
-		y = y + 290
+		
+		yl = yl + 290
 
 func abaMinhas():
 	$ScrollContainerLocal.visible = false
 	$ScrollContainerGlobal.visible = false
+	$ScrollContainerMinhas.visible = true
+	var activitiesFromPlayer = currentPlayer.getActivitiesPlayer()
+	var listM = []
+	var sizeArray = activitiesFromPlayer.size()
+	var sizePag = sizeArray * 290
+	vboxMinhas.custom_minimum_size = Vector2(10,sizePag)
 	
+	var ym = 0
+	for i in activitiesFromPlayer:
+		var activity = i
+		var activityRect = createRect(activity, ym)
+		
+		var totalSeconds = activity.getTimeLeftInt()
+		if totalSeconds == 0 :
+			activityRect.setTime("Concluída")
+		else:
+			var minu = totalSeconds/60
+			var sec = totalSeconds%60
+			var time_string = "%02d:%02d" % [minu, sec]
+			activityRect.setTime("Tempo Restante: " + time_string)
+		
+		listM.append(activityRect)
+		vboxMinhas.add_child(activityRect)
+		ym = ym + 290
+		
+	while $ScrollContainerMinhas.visible:
+		for i in listM.size():
+			var totalSeconds = activitiesFromPlayer[i].getTimeLeftInt()
+			var activityRect = listM[i]
+			if totalSeconds == 0 :
+				activityRect.setTime("Concluída")
+			else:
+				var minu = totalSeconds/60
+				var sec = totalSeconds%60
+				var time_string = "%02d:%02d" % [minu, sec]
+				activityRect.setTime("Tempo Restante: " + time_string)
+			await get_tree().create_timer(0.5).timeout
 
 
 func createRect(activity : Activity, y : int):
@@ -117,8 +161,6 @@ func activityPlay(activityId):
 	self.visible = false
 	var activity = allActivities[activityId-1]
 	activityPlayObject.emit(activity)
-	print("chegou na activity play")
-	 #colocar um signal aqui pra emitir pra deal da main
 	
 
 func _on_back_button_pressed():
