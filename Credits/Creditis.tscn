@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://cjhkmkcqrlmp5"]
 
-[ext_resource type="Texture2D" uid="uid://b7gol14ti4dcr" path="res://assets/backgrounds/creditosbackground.png" id="1_bgf16"]
+[ext_resource type="Texture2D" uid="uid://cgosjj2cpb55h" path="res://assets/backgrounds/creditosbackground.png" id="1_bgf16"]
 [ext_resource type="FontFile" uid="uid://x68u5rsd0n4f" path="res://assets/fonts/Bungee-Regular.ttf" id="2_4ckot"]
 [ext_resource type="Script" path="res://Credits/credits.gd" id="3_32mh7"]
 

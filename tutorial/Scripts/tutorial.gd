@@ -1,19 +1,8 @@
 extends Node2D
 var pageTutorial = 1
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-func _on_skiptutorial_pressed():
-	get_tree().change_scene_to_file("res://Menu/Scenes/menu_start.tscn")
-
+func _on_finishTutorial_pressed():
+	get_tree().change_scene_to_file("res://main/scene/main.tscn")
 
 func _on_next_pressed():
 	pageTutorial = pageTutorial + 1
@@ -64,9 +53,8 @@ Sempre que o jornal aparecer, você ganha seu salário e 3 aviões. A quantidade
 Para rever o tutorial de forma resumida, clique aqui!"
 
 		$Next.text = "ok"
-		$"Skip-tutorial".hide()
 		$Label2.show()
-		$Next.connect("pressed", _on_skiptutorial_pressed)
+		$Next.connect("pressed", _on_finishTutorial_pressed)
 		
 	
 	

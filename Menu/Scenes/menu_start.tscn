@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dvaqx5uk2t5hc"]
+[gd_scene load_steps=16 format=3 uid="uid://dvaqx5uk2t5hc"]
 
 [ext_resource type="Texture2D" uid="uid://cugescst5j0rj" path="res://assets/backgrounds/bg_menu.png" id="1_6lp8l"]
 [ext_resource type="Script" path="res://Menu/Scripts/menu_start.gd" id="1_7js0h"]
@@ -14,16 +14,6 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ty5jg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1oc5m"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t8laq"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xxkhy"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gy4kc"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssfi0"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghpfc"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0kb7t"]
 
@@ -97,33 +87,6 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_ty5jg")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1oc5m")
 text = "JOGAR"
 
-[node name="Label-tutorial" type="Label" parent="."]
-offset_left = 384.0
-offset_top = 304.0
-offset_right = 801.0
-offset_bottom = 407.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_aj05r")
-theme_override_font_sizes/font_size = 75
-text = "tutorial"
-
-[node name="tutorial" type="Button" parent="."]
-offset_left = 384.0
-offset_top = 294.0
-offset_right = 801.0
-offset_bottom = 370.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.827451, 0.827451, 0.827451, 1)
-theme_override_colors/font_hover_color = Color(0.92549, 0.92549, 0.92549, 1)
-theme_override_fonts/font = ExtResource("2_aj05r")
-theme_override_font_sizes/font_size = 75
-theme_override_styles/normal = SubResource("StyleBoxEmpty_t8laq")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_xxkhy")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_gy4kc")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_ssfi0")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ghpfc")
-text = "tutorial"
-
 [node name="ButtonCredits" type="Button" parent="."]
 offset_left = 176.0
 offset_top = 584.0
@@ -152,11 +115,10 @@ offset_top = 16.0
 offset_right = 280.0
 offset_bottom = 73.0
 theme_override_fonts/font = ExtResource("2_aj05r")
-text = "Agradecimentos à Gabi, Aline e principalmente Fabi"
+text = "Agradecimentos à Aline, Professora Milene, Professor Maurício e  principalmente Fabi"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [connection signal="pressed" from="play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="tutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="pressed" from="ButtonCredits" to="." method="_on_button_credits_pressed"]
