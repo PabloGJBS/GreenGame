@@ -10,8 +10,8 @@ func setTitle (value):
 func setPrice (value):
 	$Panel/PriceCoins.text = value	
 	
-func setTime (value):
-	$Panel/TimeToReady.text = value
+func setRound (value):
+	$Panel/RoundsToReady.text = value
 	
 func setQuestions (value):
 	$Panel/Numquestions.text = value

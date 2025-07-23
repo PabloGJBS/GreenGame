@@ -17,7 +17,6 @@ var currentPlayer
 
 signal activityPlayObject (activityId)
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	self.visible = false
 	setTitle("Atividades")
@@ -38,7 +37,7 @@ func _data_extraction(csv_file_path_activities):
 			if len(line) >= 2:
 				var idf = int (line[0])
 				var titlef = line[1]
-				var timeToReadyf = int(line[2])
+				var roundsf = int(line[2])
 				var priceCoinsf = int(line[3])
 				var numQuestActivityf = int(line[4])
 				var rewardStoryf = line[5]
@@ -47,7 +46,7 @@ func _data_extraction(csv_file_path_activities):
 				var temperatureRisef = float(line[8])
 				var cityf = line[9]
 				
-				var activity = Activity.new(idf, titlef,priceCoinsf,numQuestActivityf,rewardCoinsf,rewardKnowledgeGemsf,temperatureRisef,timeToReadyf,rewardStoryf, cityf)
+				var activity = Activity.new(idf, titlef,priceCoinsf,numQuestActivityf,rewardCoinsf,rewardKnowledgeGemsf,temperatureRisef,roundsf,rewardStoryf, cityf)
 				allActivities.append(activity)
 		file.close()
 	
@@ -110,45 +109,37 @@ func abaMinhas():
 		var sizePag = sizeArray * 290
 		vboxMinhas.custom_minimum_size = Vector2(10,sizePag)
 		
-		var ym = 0
-		for i in activitiesFromPlayer:
-			var activity = i
-			var activityRect = createRect(activity, ym)
+		var verticalSpace = 0
+		for activity in activitiesFromPlayer:
+			var activityRect = createRect(activity, verticalSpace)
 			
-			var totalSeconds = activity.getTimeLeftInt()
-			if totalSeconds == 0 :
-				activityRect.setTime("Concluída")
+			var roundLeft = activity.getRoundLeftInt()
+			
+			if roundLeft == 0 :
+				activityRect.setRound("Concluída")
 			else:
-				var minu = totalSeconds/60
-				var sec = totalSeconds%60
-				var time_string = "%02d:%02d" % [minu, sec]
-				activityRect.setTime("Tempo Restante: " + time_string)
+				activityRect.setRound("Rodadas Restantes: " + str(roundLeft))
 			
 			listM.append(activityRect)
 			vboxMinhas.add_child(activityRect)
-			ym = ym + 290
+			verticalSpace = verticalSpace + 290
 			
 		while $ScrollContainerMinhas.visible:
 			for i in listM.size():
-				var totalSeconds = activitiesFromPlayer[i].getTimeLeftInt()
+				var roundLeft = activitiesFromPlayer[i].getRoundLeftInt()
 				var activityRect = listM[i]
-				if totalSeconds == 0 :
-					activityRect.setTime("Concluída")
+				if roundLeft == 0 :
+					activityRect.setRound("Concluída")
 				else:
-					var minu = totalSeconds/60
-					var sec = totalSeconds%60
-					var time_string = "%02d:%02d" % [minu, sec]
-					activityRect.setTime("Tempo Restante: " + time_string)
+					activityRect.setRound("Rodadas Restantes: " + str(roundLeft))
 			await get_tree().create_timer(0.2).timeout
-
 
 func createRect(activity : Activity, y : int):
 	var activityRect = greenRectScene.instantiate()
-	var minready = (activity.timeToReady)/60
 	
 	activityRect.setTitle(activity.title)
 	activityRect.setPrice("Custo: " + str(activity.priceCoins))
-	activityRect.setTime("Tempo: " + str(minready) + " Min")
+	activityRect.setRound("Rodadas: " + str(activity.rounds))
 	activityRect.setQuestions("Perguntas: " + str(activity.numQuestActivity))
 	activityRect.setCity(activity.city)
 	activityRect.setActivityId(activity.idActivity)

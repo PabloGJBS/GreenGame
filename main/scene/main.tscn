@@ -378,17 +378,9 @@ offset_bottom = 652.0
 visible = false
 z_index = 3
 
-[node name="Timer-miniGame-Fishing" type="Timer" parent="."]
-wait_time = 90.0
-one_shot = true
-
 [node name="menu_waiting_room" parent="." instance=ExtResource("26_8qsto")]
 visible = false
 z_index = 10
-
-[node name="Timer-Restaurant-minigame" type="Timer" parent="."]
-wait_time = 270.0
-one_shot = true
 
 [node name="Wrong question- AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("31_2imm3")
@@ -414,5 +406,3 @@ stream = ExtResource("36_5tjwi")
 [connection signal="pressed" from="Button-KGem" to="." method="_on_button_k_gem_pressed"]
 [connection signal="pressed" from="Button-PassTurn" to="." method="botao_avancar_rodada"]
 [connection signal="value_changed" from="Termometro" to="." method="_on_termometro_value_changed"]
-[connection signal="timeout" from="Timer-miniGame-Fishing" to="." method="_on_timermini_game_fishing_timeout"]
-[connection signal="timeout" from="Timer-Restaurant-minigame" to="." method="_on_timer_restaurantminigame_timeout"]

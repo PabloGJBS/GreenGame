@@ -29,6 +29,7 @@ var globalTemperature : float = 1.25
 var communityKnowledgeGems : int
 var KGemTemperaturePower = -0.25
 var KGemPrice = 8
+var roundContador = 0
 
 func getGlobalTemperature():
 	return globalTemperature
@@ -59,8 +60,6 @@ func addCommunityKnowledgeGems(value):
 	
 func changePlayerSkin(playerSkinString):
 	player.setPlayerSkin(playerSkinString)
-	$"Timer-miniGame-Fishing".start()
-	$"Timer-Restaurant-minigame".start()
 	menuWaitingRoom.hide()
 		
 func _ready():
@@ -90,7 +89,6 @@ func _ready():
 	if file == null:
 		print("erro ao abrir o arquivo do mapa")
 	else:
-		print("consegui abrir o arquivo do mapa")
 		var _header = file.get_csv_line()
 		while !file.eof_reached():
 			var line = file.get_csv_line()
@@ -129,13 +127,23 @@ func moving_player(cityDestiny : City):
 		
 	
 func botao_avancar_rodada():
+	roundContador += 1
+	player.updatePlayerRoundActivities()
 	player.addflights(2)
 	$"Label-plane".text = str(player.getflights())
 	
 	player.addcoins(5)
 	$"Label-coins".text = str(player.getcoins()) 
 	
+	if (roundContador%2 == 0 && roundContador%4 != 0):
+		miniGameFishing.show()
+	if (roundContador%2 == 0 && roundContador%4 == 0):	
+		$minigame_restaurant_tutorial.show()
+		
 	jornalPainel.show_jornal(globalTemperature)
+	
+	
+	
 
 func dealJornalConsequences (jornal : Jornal):
 	var increaseTemp = jornal.temperatureRise
@@ -235,9 +243,6 @@ func _on_button_k_gem_pressed():
 	kgemPainel.show()
 
 
-func _on_timermini_game_fishing_timeout():
-	miniGameFishing.show()
-	
 
 func _on_buttonstore_pressed():
 	storePainel.show()
@@ -246,17 +251,16 @@ func fishingMiniGameEnded(coinsGained):
 	$"Activity Reward - AudioStreamPlayer2D".play()
 	player.addcoins(coinsGained)
 	$"Label-coins".text = str(player.getcoins())	
-	$"Timer-miniGame-Fishing".free()
+	
 	$menu_waiting_room.free()
 	
-func _on_timer_restaurantminigame_timeout():
-	$minigame_restaurant_tutorial.show()
+	
+	$Minigame_fishing_tutorial.hide()
 	
 func restaurantMiniGameEnded(coinsGained):
 	$"Activity Reward - AudioStreamPlayer2D".play()
 	player.addcoins(coinsGained)
 	$"Label-coins".text = str(player.getcoins())
 	
-	$Minigame_fishing_tutorial.free()
-	$"Timer-Restaurant-minigame".free()
+	$minigame_restaurant_tutorial.hide()
 	

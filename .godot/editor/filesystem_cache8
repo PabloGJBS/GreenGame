@@ -1,22 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1752177413
+::res://::1753310170
 default_env.tres::Environment::5797019530976206411::1708695973::0::1::::<><>::
 ::res://activity/::1752170416
-::res://activity/scenes/::1752173793
-GreenRect.tscn::PackedScene::1429012997578715194::1752173793::0::1::::<><>::res://activity/scripts/GreenRect.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://cx5vhbgqeyj1p::::res://assets/icons/Vector.png<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png<>uid://8oo68pnhcm0s::::res://assets/icons/relogio.png<>uid://bxyebhvqsxay4::::res://assets/icons/Polygon 4.png<>uid://cvg6kocg6j52r::::res://assets/icons/❔.png
-painel_activity.tscn::PackedScene::734554541730867382::1752173793::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://activity/scripts/painel_activity.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf
-::res://activity/scripts/::1752173422
-ActivityClass.gd::GDScript::-1::1752173265::0::1::::Activity<>Node<>::
+::res://activity/scenes/::1753308421
+GreenRect.tscn::PackedScene::1429012997578715194::1753308421::0::1::::<><>::res://activity/scripts/GreenRect.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://cx5vhbgqeyj1p::::res://assets/icons/Vector.png<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png<>uid://8oo68pnhcm0s::::res://assets/icons/relogio.png<>uid://bxyebhvqsxay4::::res://assets/icons/Polygon 4.png<>uid://cvg6kocg6j52r::::res://assets/icons/❔.png
+painel_activity.tscn::PackedScene::734554541730867382::1753308421::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://activity/scripts/painel_activity.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf
+::res://activity/scripts/::1753308414
+ActivityClass.gd::GDScript::-1::1753308414::0::1::::Activity<>Node<>::
 GreenRect.gd::GDScript::-1::1752173082::0::1::::<>Node2D<>::
-painel_activity.gd::GDScript::-1::1752173422::0::1::::<>PainelGeral<>::
+painel_activity.gd::GDScript::-1::1753307160::0::1::::<>PainelGeral<>::
 ::res://addons/::1709314271
 ::res://Agentes/::1750717421
-::res://Alerts/::1752173793
+::res://Alerts/::1753308421
 alert_no_k_gem.tscn::PackedScene::6971706989264592495::1752173422::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://dqanm1fmjmcp0::::res://assets/icons/icon-kgem.png
 minigame_fishing_tutorial.gd::GDScript::-1::1752173422::0::1::::<>PainelGeral<>::
 minigame_fishing_tutorial.tscn::PackedScene::1525382619705715560::1752173793::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://Alerts/minigame_fishing_tutorial.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://bkbelyt2ukw6h::::res://MiniGames/FishingTrash/fishingMiniGame.tscn
 minigame_restaurant_tutorial.gd::GDScript::-1::1752173793::0::1::::<>PainelGeral<>::
-minigame_restaurant_tutorial.tscn::PackedScene::3632266718311312581::1752173793::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://Alerts/minigame_restaurant_tutorial.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://cphyl0b8m5ypf::::res://MiniGames/Restaurant/restaurant.tscn<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png
+minigame_restaurant_tutorial.tscn::PackedScene::3632266718311312581::1753308421::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://Alerts/minigame_restaurant_tutorial.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://cphyl0b8m5ypf::::res://MiniGames/Restaurant/restaurant.tscn<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png
 painel_activity_reward.gd::GDScript::-1::1752173265::0::1::::<>PainelGeral<>::
 painel_activity_reward.tscn::PackedScene::2550426381411755640::1752173793::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://Alerts/painel_activity_reward.gd<>uid://bliqds0mout3f::::res://assets/Styles/GreenRect.tres<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png<>uid://cuiophxp68y0d::::res://assets/icons/512.png<>uid://dqanm1fmjmcp0::::res://assets/icons/icon-kgem.png<>uid://bla0dsgxid8ov::::res://assets/icons/palmas.png
 painel_activity_started.tscn::PackedScene::3968808922076857041::1752173793::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://bla0dsgxid8ov::::res://assets/icons/palmas.png
@@ -26,14 +26,14 @@ painel_plane_alert.gd::GDScript::-1::1752172507::0::1::::<>PainelGeral<>::
 painel_plane_alert.tscn::PackedScene::9071239820475150090::1752173793::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>res://Alerts/painel_plane_alert.gd<>uid://chwtc0ectg0pj::::res://assets/icons/aviao.png<>uid://pnqwurhc8457::::res://assets/buttons/icon-store.png
 painel_wrong_question.gd::GDScript::-1::1752172827::0::1::::<>PainelGeral<>::
 painel_wrong_question.tscn::PackedScene::3323361630860161889::1752173082::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://Alerts/painel_wrong_question.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf
-::res://assets/::1752177149
+::res://assets/::1752180221
 logo.png::CompressedTexture2D::8044690089194044895::1752172507::1752180221::1::::<><>::
 termometro.png::CompressedTexture2D::8098594280141907154::1752172080::1752180221::1::::<><>::
-::res://assets/arrows/::1752177149
+::res://assets/arrows/::1752180221
 arrow-kgm.png::CompressedTexture2D::7158860328115652076::1752173265::1752180221::1::::<><>::
 arrow-kgme-change.png::CompressedTexture2D::3504825977654001214::1752173265::1752180221::1::::<><>::
 Left.png::CompressedTexture2D::3031130025073840231::1752173265::1752180221::1::::<><>::
-::res://assets/backgrounds/::1752179507
+::res://assets/backgrounds/::1753303817
 bg_menu.png::CompressedTexture2D::6189279652689488567::1752172921::1752180221::1::::<><>::
 creditosbackground.png::CompressedTexture2D::5223985210317035123::1752178659::1752180221::1::::<><>::
 fogo.png::CompressedTexture2D::7981235806428147282::1752172507::1752180221::1::::<><>::
@@ -46,9 +46,10 @@ img-creditos.png::CompressedTexture2D::3742962281933421257::1752178074::17521802
 menu-rooms.png::CompressedTexture2D::8069622876844306137::1752173265::1752180221::1::::<><>::
 Rectangle 90.png::CompressedTexture2D::2610478995724227277::1752173793::1752180221::1::::<><>::
 splash 2.png::CompressedTexture2D::3349479163956804803::1752172507::1752180221::1::::<><>::
+splash gg.png::CompressedTexture2D::9087763278891594548::1753303762::1753303817::1::::<><>::
 Splash.png::CompressedTexture2D::9083270089095121645::1752172507::1752180221::1::::<><>::
 under-bar.png::CompressedTexture2D::3756725831531955523::1752173082::1752180221::1::::<><>::
-::res://assets/buttons/::1752177149
+::res://assets/buttons/::1752180221
 icon-chat.png::CompressedTexture2D::9152545805186345294::1752172921::1752180221::1::::<><>::
 icon-community.png::CompressedTexture2D::2559070331886463395::1752172921::1752180221::1::::<><>::
 icon-store.png::CompressedTexture2D::1080681401774164184::1752172921::1752180221::1::::<><>::
@@ -60,9 +61,9 @@ white-button_0003.png::CompressedTexture2D::3316198910450399375::1752172507::175
 ⚪.png::CompressedTexture2D::4532000579431537270::1752173793::1752180221::1::::<><>::
 ⚫.png::CompressedTexture2D::2260418403881279506::1752173793::1752180221::1::::<><>::
 🔵.png::CompressedTexture2D::6568493446320493469::1752173793::1752180221::1::::<><>::
-::res://assets/fonts/::1752177149
+::res://assets/fonts/::1752180220
 Bungee-Regular.ttf::FontFile::1680380093475013771::1692985884::1752180220::1::::<><>::
-::res://assets/icons/::1752177149
+::res://assets/icons/::1752180221
 512.png::CompressedTexture2D::6194010490904867917::1752172507::1752180221::1::::<><>::
 Ads-icon.png::CompressedTexture2D::1315527083965093114::1752173793::1752180221::1::::<><>::
 aviao.png::CompressedTexture2D::5310738097271614219::1752173793::1752180221::1::::<><>::
@@ -80,7 +81,7 @@ twemoji_coin.png::CompressedTexture2D::1348481749965670622::1752172507::17521802
 Vector.png::CompressedTexture2D::6450403723613613607::1752172507::1752180220::1::::<><>::
 ❓.png::CompressedTexture2D::5607055266368360605::1752173422::1752180220::1::::<><>::
 ❔.png::CompressedTexture2D::6261094173754989335::1752173422::1752180220::1::::<><>::
-::res://assets/playerSkins/::1752177149
+::res://assets/playerSkins/::1752180221
 skin1.png::CompressedTexture2D::4065055353008762540::1752173793::1752180221::1::::<><>::
 skin2.png::CompressedTexture2D::3471343378853109029::1752173793::1752180220::1::::<><>::
 skin3.png::CompressedTexture2D::805119377298270245::1752173793::1752180221::1::::<><>::
@@ -91,7 +92,7 @@ skin7.png::CompressedTexture2D::693226533291097354::1752173793::1752180221::1:::
 skin8.png::CompressedTexture2D::8177252813433907087::1752173793::1752180221::1::::<><>::
 skin9.png::CompressedTexture2D::8943643294251903999::1752173793::1752180221::1::::<><>::
 skin10.png::CompressedTexture2D::6594215376500743399::1752173793::1752180221::1::::<><>::
-::res://assets/sound effects/::1752177149
+::res://assets/sound effects/::1752180221
 flame.ogg::AudioStreamOggVorbis::2709309322141978931::1752173793::1752180220::1::::<><>::
 GAMEOVER.wav::AudioStreamWAV::8052577311551022796::1752173793::1752180221::1::::<><>::
 losetrumpet.wav::AudioStreamWAV::8798306579193348453::1752173793::1752180221::1::::<><>::
@@ -104,8 +105,8 @@ Won!.wav::AudioStreamWAV::963411935131747762::1752173793::1752180221::1::::<><>:
 GreenRect.tres::StyleBoxFlat::3175990799615069385::1752172827::0::1::::<><>::
 ::res://chat/::1702657182
 ::res://community/::1702657251
-::res://Credits/::1752179322
-Creditis.tscn::PackedScene::5419620732934676916::1752179322::0::1::::<><>::uid://b7gol14ti4dcr::::res://assets/backgrounds/creditosbackground.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>res://Credits/credits.gd
+::res://Credits/::1753308421
+Creditis.tscn::PackedScene::5419620732934676916::1753308421::0::1::::<><>::uid://cgosjj2cpb55h::::res://assets/backgrounds/creditosbackground.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>res://Credits/credits.gd
 credits.gd::GDScript::-1::1752179314::0::1::::<>Node<>::
 ::res://Data/::1752173082
 ::res://Data/Jornal/::1752171588
@@ -120,13 +121,13 @@ Jornal (cartas da terra + sorte) - Copy of cartas da Terra.Consequence coins.tra
 Jornal (cartas da terra + sorte) - Copy of cartas da Terra.Consequence temperature (for all).translation::OptimizedTranslation::8191245472721886394::1752179747::0::1::::<><>::
 Jornal (cartas da terra + sorte) - Copy of cartas da Terra.csv::Translation::5900417045082345268::1752171866::1752179747::1::::<><>::
 Jornal (cartas da terra + sorte) - Copy of cartas da Terra.Story.translation::OptimizedTranslation::4969089620945538185::1752179747::0::1::::<><>::
-::res://Data/Lista de atividades/::1752179747
-Lista de atividades - ALL.7.translation::OptimizedTranslation::8229703839556214221::1752179747::0::1::::<><>::
-Lista de atividades - ALL.51.translation::OptimizedTranslation::6906186264950386830::1752179747::0::1::::<><>::
-Lista de atividades - ALL.120.translation::OptimizedTranslation::3957595745938349067::1752179747::0::1::::<><>::
-Lista de atividades - ALL.482.translation::OptimizedTranslation::928326247327152535::1752179747::0::1::::<><>::
-Lista de atividades - ALL.1009.translation::OptimizedTranslation::4543863943755204795::1752179747::0::1::::<><>::
-Lista de atividades - ALL.csv::Translation::818793258369777845::1752173265::1752179747::1::::<><>::
+::res://Data/Lista de atividades/::1753310147
+Lista de atividades - ALL.7.translation::OptimizedTranslation::1332568012034597883::1753306390::0::1::::<><>::
+Lista de atividades - ALL.51.translation::OptimizedTranslation::7731339818473371142::1753306390::0::1::::<><>::
+Lista de atividades - ALL.120.translation::OptimizedTranslation::236070435883022834::1753306390::0::1::::<><>::
+Lista de atividades - ALL.482.translation::OptimizedTranslation::4112870008309559236::1753306390::0::1::::<><>::
+Lista de atividades - ALL.1009.translation::OptimizedTranslation::7227489331298750493::1753306390::0::1::::<><>::
+Lista de atividades - ALL.csv::Translation::7309716231486386600::1753306357::1753306390::1::::<><>::
 ::res://Data/Mapa/::1752179747
 Lista de atividades - Mapa.activities.translation::OptimizedTranslation::2235000408249188059::1752179747::0::1::::<><>::
 Lista de atividades - Mapa.conections.translation::OptimizedTranslation::215352231826636048::1752179747::0::1::::<><>::
@@ -138,11 +139,11 @@ Perguntas Sustentabilidade - Sheet1.csv::Translation::1367569202335043708::17521
 Perguntas Sustentabilidade - Sheet1.Resposta.translation::OptimizedTranslation::5305990136783966526::1752179747::0::1::::<><>::
 ::res://docs/::1752173082
 docs.md::TextFile::-1::1752173082::0::1::::<><>::
-::res://GameOver/::1752179322
+::res://GameOver/::1753308421
 Lost.gd::GDScript::-1::1752178210::0::1::::<>Node2D<>::
-Lost.tscn::PackedScene::8768045931091721503::1752179322::0::1::::<><>::uid://dlyf11seyhsvi::::res://assets/backgrounds/fogo.png<>res://GameOver/Lost.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://dmyy1ih2rbyum::::res://assets/sound effects/GAMEOVER.wav
+Lost.tscn::PackedScene::8768045931091721503::1753308421::0::1::::<><>::uid://dlyf11seyhsvi::::res://assets/backgrounds/fogo.png<>res://GameOver/Lost.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://dmyy1ih2rbyum::::res://assets/sound effects/GAMEOVER.wav
 Won.gd::GDScript::-1::1752178394::0::1::::<>Node2D<>::
-Won.tscn::PackedScene::9200272909586911481::1752179322::0::1::::<><>::res://GameOver/Won.gd<>uid://d2oaep1a56ksj::::res://assets/backgrounds/Splash.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://nyxivn7vfr6y::::res://assets/sound effects/Won!.wav
+Won.tscn::PackedScene::9200272909586911481::1753308421::0::1::::<><>::res://GameOver/Won.gd<>uid://d2oaep1a56ksj::::res://assets/backgrounds/Splash.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://nyxivn7vfr6y::::res://assets/sound effects/Won!.wav
 ::res://jornal/::1752172507
 ::res://jornal/scenes/::1752173422
 painel_jornal.tscn::PackedScene::2551480269902710291::1752173422::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://jornal/scripts/painel_jornal.gd<>uid://b6c8e5ccwjbvb::::res://assets/buttons/Rectangle 13.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png<>uid://cuiophxp68y0d::::res://assets/icons/512.png
@@ -153,20 +154,20 @@ painel_jornal.gd::GDScript::-1::1752172827::0::1::::<>PainelGeral<>::
 painel_kgem.gd::GDScript::-1::1752173343::0::1::::<>PainelGeral<>::
 painel_kgem.tscn::PackedScene::2914681342764420880::1752173647::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>res://KGem/painel_kgem.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://dqanm1fmjmcp0::::res://assets/icons/icon-kgem.png<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png<>uid://cuiophxp68y0d::::res://assets/icons/512.png<>uid://c882nbshm1m7m::::res://assets/arrows/arrow-kgm.png
 ::res://main/::1702657990
-::res://main/scene/::1752176455
+::res://main/scene/::1753308421
 CityButton.tscn::PackedScene::1769529831224814475::1752173793::0::1::::<><>::uid://b5tlnf30qpc35::::res://assets/buttons/⚪.png<>uid://7g704s4q22qo::::res://assets/buttons/⚫.png<>uid://c0t3eljarlu2p::::res://assets/buttons/🔵.png
-main.tscn::PackedScene::3495929340219417820::1752176455::0::1::::<><>::res://main/scripts/main.gd<>uid://dhtucd1d5ertp::::res://assets/backgrounds/Imagem real - laranja.png<>uid://dr5uqoyqrk4q3::::res://main/scene/worldMap.tscn<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://chwtc0ectg0pj::::res://assets/icons/aviao.png<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png<>uid://dqanm1fmjmcp0::::res://assets/icons/icon-kgem.png<>uid://db2ayu2hawd7a::::res://assets/icons/info-mini-tutorial.png<>uid://bkqljm64dmb5f::::res://player/scene/Player.tscn<>uid://cfsect668ukx5::::res://assets/icons/fluent_people-community-16-regular.png<>uid://cnsasb136o0t1::::res://assets/icons/store.png<>uid://bblkgm5ls4wm2::::res://assets/icons/ic_twotone-business-center.png<>uid://6mqycdurtyrx::::res://assets/icons/fast_forward.png<>uid://dnnawuio3n54y::::res://assets/termometro.png<>uid://bemq4w1sjg5wy::::res://Alerts/painel_no_money_to_activity.tscn<>uid://bdgshccav4ybt::::res://assets/backgrounds/Rectangle 90.png<>uid://kp3ag6exrchi::::res://activity/scenes/painel_activity.tscn<>uid://d2if82ws416i5::::res://Alerts/painel_plane_alert.tscn<>uid://bcl7rinykxawp::::res://jornal/scenes/painel_jornal.tscn<>uid://d223mj1vryymg::::res://questions/scenes/painel_questions.tscn<>uid://vy53ggrl6tgi::::res://Alerts/minigame_fishing_tutorial.tscn<>uid://br0q5w547nq82::::res://Alerts/minigame_restaurant_tutorial.tscn<>uid://bnl4jsjha071f::::res://Alerts/painel_wrong_question.tscn<>uid://bwsrx51q8qjxp::::res://Alerts/painel_activity_started.tscn<>uid://5vm8fci5y83u::::res://tutorial/Scenes/mini_tutorial.tscn<>uid://c6le833p8vptv::::res://Alerts/alert_no_k_gem.tscn<>uid://d3ntdeuer32wg::::res://assets/buttons/icon-chat.png<>uid://bclpfdi45sag3::::res://Alerts/painel_activity_reward.tscn<>uid://bhr5m1rnmtb33::::res://KGem/painel_kgem.tscn<>uid://076rqil3dob8::::res://Menu/Scenes/menu_waiting_room.tscn<>uid://bg8alnqs6bcy2::::res://store/scenes/store_painel.tscn<>uid://dxl73ao8pcvhd::::res://assets/sound effects/losetrumpet.wav<>uid://bac7xsyx4q5ja::::res://assets/sound effects/Win sound.wav<>uid://dmyy1ih2rbyum::::res://assets/sound effects/GAMEOVER.wav<>uid://nyxivn7vfr6y::::res://assets/sound effects/Won!.wav<>uid://t0h304jw7usi::::res://assets/sound effects/Well Done CCBY3.ogg<>uid://cejudeo1qf01k::::res://assets/sound effects/Waving Torch.wav
+main.tscn::PackedScene::3495929340219417820::1753308421::0::1::::<><>::res://main/scripts/main.gd<>uid://dhtucd1d5ertp::::res://assets/backgrounds/Imagem real - laranja.png<>uid://dr5uqoyqrk4q3::::res://main/scene/worldMap.tscn<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://chwtc0ectg0pj::::res://assets/icons/aviao.png<>uid://thhkd2iyw3pa::::res://assets/icons/twemoji_coin.png<>uid://dqanm1fmjmcp0::::res://assets/icons/icon-kgem.png<>uid://db2ayu2hawd7a::::res://assets/icons/info-mini-tutorial.png<>uid://bkqljm64dmb5f::::res://player/scene/Player.tscn<>uid://cfsect668ukx5::::res://assets/icons/fluent_people-community-16-regular.png<>uid://cnsasb136o0t1::::res://assets/icons/store.png<>uid://bblkgm5ls4wm2::::res://assets/icons/ic_twotone-business-center.png<>uid://6mqycdurtyrx::::res://assets/icons/fast_forward.png<>uid://dnnawuio3n54y::::res://assets/termometro.png<>uid://bemq4w1sjg5wy::::res://Alerts/painel_no_money_to_activity.tscn<>uid://bdgshccav4ybt::::res://assets/backgrounds/Rectangle 90.png<>uid://kp3ag6exrchi::::res://activity/scenes/painel_activity.tscn<>uid://d2if82ws416i5::::res://Alerts/painel_plane_alert.tscn<>uid://bcl7rinykxawp::::res://jornal/scenes/painel_jornal.tscn<>uid://d223mj1vryymg::::res://questions/scenes/painel_questions.tscn<>uid://vy53ggrl6tgi::::res://Alerts/minigame_fishing_tutorial.tscn<>uid://br0q5w547nq82::::res://Alerts/minigame_restaurant_tutorial.tscn<>uid://bnl4jsjha071f::::res://Alerts/painel_wrong_question.tscn<>uid://bwsrx51q8qjxp::::res://Alerts/painel_activity_started.tscn<>uid://5vm8fci5y83u::::res://tutorial/Scenes/mini_tutorial.tscn<>uid://c6le833p8vptv::::res://Alerts/alert_no_k_gem.tscn<>uid://d3ntdeuer32wg::::res://assets/buttons/icon-chat.png<>uid://bclpfdi45sag3::::res://Alerts/painel_activity_reward.tscn<>uid://bhr5m1rnmtb33::::res://KGem/painel_kgem.tscn<>uid://076rqil3dob8::::res://Menu/Scenes/menu_waiting_room.tscn<>uid://bg8alnqs6bcy2::::res://store/scenes/store_painel.tscn<>uid://dxl73ao8pcvhd::::res://assets/sound effects/losetrumpet.wav<>uid://bac7xsyx4q5ja::::res://assets/sound effects/Win sound.wav<>uid://dmyy1ih2rbyum::::res://assets/sound effects/GAMEOVER.wav<>uid://nyxivn7vfr6y::::res://assets/sound effects/Won!.wav<>uid://t0h304jw7usi::::res://assets/sound effects/Well Done CCBY3.ogg<>uid://cejudeo1qf01k::::res://assets/sound effects/Waving Torch.wav
 worldMap.tscn::PackedScene::8415647411257774224::1729014148::0::1::::<><>::res://main/scripts/WorldMap.gd
-::res://main/scripts/::1752176455
+::res://main/scripts/::1753308414
 City.gd::GDScript::-1::1752171866::0::1::::City<>Node2D<>::
-main.gd::GDScript::-1::1752176455::0::1::::<>Node2D<>::
+main.gd::GDScript::-1::1753308414::0::1::::<>Node2D<>::
 WorldMap.gd::GDScript::-1::1752173793::0::1::::WorldMap<>Node2D<>::
 ::res://Menu/::1752172921
-::res://Menu/Scenes/::1752179322
-menu_start.tscn::PackedScene::8634241919709868912::1752179322::0::1::::<><>::uid://cugescst5j0rj::::res://assets/backgrounds/bg_menu.png<>res://Menu/Scripts/menu_start.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://cx5vhbgqeyj1p::::res://assets/icons/Vector.png
+::res://Menu/Scenes/::1753308421
+menu_start.tscn::PackedScene::8634241919709868912::1753308421::0::1::::<><>::uid://cugescst5j0rj::::res://assets/backgrounds/bg_menu.png<>res://Menu/Scripts/menu_start.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://cx5vhbgqeyj1p::::res://assets/icons/Vector.png
 menu_waiting_room.tscn::PackedScene::1822694617622244915::1752173793::0::1::::<><>::res://Menu/Scripts/menu_waiting_room.gd<>uid://bnyrox6vaanqp::::res://assets/backgrounds/splash 2.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://e41uscdwo833::::res://Painel - global/painel.tscn<>uid://bx6e4reeju1xg::::res://assets/playerSkins/skin1.png<>uid://bppsrveql50xt::::res://assets/playerSkins/skin2.png<>uid://lqag0qolc0yr::::res://assets/playerSkins/skin3.png<>uid://bc2o5acj5a6tf::::res://assets/playerSkins/skin4.png<>uid://cboebrf1ejchd::::res://assets/playerSkins/skin5.png<>uid://d4jukcpndxau0::::res://assets/playerSkins/skin6.png<>uid://j42lsyoi1f8e::::res://assets/playerSkins/skin7.png<>uid://dorefn7jmhsbn::::res://assets/playerSkins/skin8.png<>uid://d0omq7ecx618n::::res://assets/playerSkins/skin9.png<>uid://c07j078ltjmip::::res://assets/playerSkins/skin10.png
-::res://Menu/Scripts/::1752173793
-menu_start.gd::GDScript::-1::1752173793::0::1::::<>Node2D<>::
+::res://Menu/Scripts/::1752180551
+menu_start.gd::GDScript::-1::1752180551::0::1::::<>Node2D<>::
 menu_waiting_room.gd::GDScript::-1::1752173793::0::1::::<>Node2D<>::
 ::res://MiniGames/::1752173422
 ::res://MiniGames/FishingTrash/::1752173793
@@ -174,7 +175,7 @@ fishingMiniGame.gd::GDScript::-1::1752173793::0::1::::<>Node2D<>::
 fishingMiniGame.tscn::PackedScene::3090637300697094445::1752173793::0::1::::<><>::res://MiniGames/FishingTrash/fishingMiniGame.gd<>uid://cypcof8h4cceu::::res://MiniGames/FishingTrash/assets/sea.png<>res://MiniGames/FishingTrash/trash.gd<>uid://bxc2u3v2pivlq::::res://MiniGames/FishingTrash/assets/lixo lata.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>res://MiniGames/FishingTrash/playerBasket.gd<>uid://de10ft2ixhmmk::::res://MiniGames/FishingTrash/assets/cesta.png
 playerBasket.gd::GDScript::-1::1752173793::0::1::::<>CharacterBody2D<>::
 trash.gd::GDScript::-1::1752173422::0::1::::<>CharacterBody2D<>::
-::res://MiniGames/FishingTrash/assets/::1752177149
+::res://MiniGames/FishingTrash/assets/::1752180221
 cesta.png::CompressedTexture2D::7495219141073553466::1752173793::1752180220::1::::<><>::
 lixeira.png::CompressedTexture2D::2026183821932327622::1752173793::1752180220::1::::<><>::
 lixo escova.png::CompressedTexture2D::8615723376442837276::1752173793::1752180220::1::::<><>::
@@ -182,10 +183,10 @@ lixo lata.png::CompressedTexture2D::4006569421900595242::1752173793::1752180220:
 lixo suco.png::CompressedTexture2D::2449002543733615443::1752173793::1752180220::1::::<><>::
 sea.png::CompressedTexture2D::6488486030062256676::1752173422::1752180221::1::::<><>::
 🗑️.png::CompressedTexture2D::2903674425533322056::1752173422::1752180221::1::::<><>::
-::res://MiniGames/Restaurant/::1752173793
+::res://MiniGames/Restaurant/::1753308421
 restaurant.gd::GDScript::-1::1752173793::0::1::::<>Node2D<>::
-restaurant.tscn::PackedScene::5841602833939625715::1752173793::0::1::::<><>::uid://cqt4fvj23755i::::res://MiniGames/Restaurant/assets/restaurant.png<>res://MiniGames/Restaurant/restaurant.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://du5mq2atu76u8::::res://MiniGames/Restaurant/assets/queijo.png<>uid://c34nvm54g2s75::::res://MiniGames/Restaurant/assets/cenoura.png<>uid://cvq3xdike0um1::::res://MiniGames/Restaurant/assets/ervilha.png<>uid://brr2tcwsd1et7::::res://MiniGames/Restaurant/assets/batataFrita.png<>uid://dmd356c3bi3tj::::res://MiniGames/Restaurant/assets/carne.png<>uid://ch4hsw1pskj74::::res://MiniGames/Restaurant/assets/milho.png<>uid://bq5dp5riplmiy::::res://MiniGames/Restaurant/assets/banana.png<>uid://cyhvgn5vhadyw::::res://MiniGames/Restaurant/assets/bacon.png<>uid://ba1edgsvw6wr3::::res://MiniGames/Restaurant/assets/tomate.png<>uid://cior5vep3t6qr::::res://MiniGames/Restaurant/assets/alface.png<>uid://dybbl52e5g3s0::::res://MiniGames/Restaurant/assets/peixe.png<>uid://d0gpalpciyieb::::res://MiniGames/Restaurant/assets/pao.png<>uid://dgmgf6p1lw6d0::::res://MiniGames/Restaurant/assets/macarrao.png<>uid://2boit4kfh1xc::::res://MiniGames/Restaurant/assets/falafel.png<>uid://ca2dm0glxkawh::::res://MiniGames/Restaurant/assets/frango.png<>uid://co8xghixgy61f::::res://MiniGames/Restaurant/assets/arroz.png<>uid://cqp1e15bu37uu::::res://MiniGames/Restaurant/assets/brocolis.png<>uid://wksrmfwb066f::::res://MiniGames/Restaurant/assets/ovo.png<>uid://o6is7dsuvcdb::::res://MiniGames/Restaurant/assets/feijao.png<>uid://bia1fq620oi15::::res://MiniGames/Restaurant/assets/pepino.png<>uid://c1vta76gccsr5::::res://MiniGames/Restaurant/assets/panela.png<>uid://8oo68pnhcm0s::::res://assets/icons/relogio.png
-::res://MiniGames/Restaurant/assets/::1752177149
+restaurant.tscn::PackedScene::5841602833939625715::1753308421::0::1::::<><>::uid://cqt4fvj23755i::::res://MiniGames/Restaurant/assets/restaurant.png<>res://MiniGames/Restaurant/restaurant.gd<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://du5mq2atu76u8::::res://MiniGames/Restaurant/assets/queijo.png<>uid://c34nvm54g2s75::::res://MiniGames/Restaurant/assets/cenoura.png<>uid://cvq3xdike0um1::::res://MiniGames/Restaurant/assets/ervilha.png<>uid://brr2tcwsd1et7::::res://MiniGames/Restaurant/assets/batataFrita.png<>uid://dmd356c3bi3tj::::res://MiniGames/Restaurant/assets/carne.png<>uid://ch4hsw1pskj74::::res://MiniGames/Restaurant/assets/milho.png<>uid://bq5dp5riplmiy::::res://MiniGames/Restaurant/assets/banana.png<>uid://cyhvgn5vhadyw::::res://MiniGames/Restaurant/assets/bacon.png<>uid://ba1edgsvw6wr3::::res://MiniGames/Restaurant/assets/tomate.png<>uid://cior5vep3t6qr::::res://MiniGames/Restaurant/assets/alface.png<>uid://dybbl52e5g3s0::::res://MiniGames/Restaurant/assets/peixe.png<>uid://d0gpalpciyieb::::res://MiniGames/Restaurant/assets/pao.png<>uid://dgmgf6p1lw6d0::::res://MiniGames/Restaurant/assets/macarrao.png<>uid://2boit4kfh1xc::::res://MiniGames/Restaurant/assets/falafel.png<>uid://ca2dm0glxkawh::::res://MiniGames/Restaurant/assets/frango.png<>uid://co8xghixgy61f::::res://MiniGames/Restaurant/assets/arroz.png<>uid://cqp1e15bu37uu::::res://MiniGames/Restaurant/assets/brocolis.png<>uid://wksrmfwb066f::::res://MiniGames/Restaurant/assets/ovo.png<>uid://o6is7dsuvcdb::::res://MiniGames/Restaurant/assets/feijao.png<>uid://bia1fq620oi15::::res://MiniGames/Restaurant/assets/pepino.png<>uid://c1vta76gccsr5::::res://MiniGames/Restaurant/assets/panela.png<>uid://8oo68pnhcm0s::::res://assets/icons/relogio.png
+::res://MiniGames/Restaurant/assets/::1752180221
 alface.png::CompressedTexture2D::5364340277630777445::1752173793::1752180221::1::::<><>::
 arroz.png::CompressedTexture2D::5825017230875585269::1752173793::1752180221::1::::<><>::
 bacon.png::CompressedTexture2D::6473110760700109794::1752173793::1752180221::1::::<><>::
@@ -233,8 +234,8 @@ store_painel.tscn::PackedScene::2875698563517950859::1752173793::0::1::::<><>::u
 OrangeRect.gd::GDScript::-1::1752173793::0::1::::<>Node2D<>::
 store_painel.gd::GDScript::-1::1752173793::0::1::::<>PainelGeral<>::
 ::res://tutorial/::1752173265
-::res://tutorial/Scenes/::1752173793
+::res://tutorial/Scenes/::1753308421
 mini_tutorial.tscn::PackedScene::2149805043199201392::1752173265::0::1::::<><>::uid://e41uscdwo833::::res://Painel - global/painel.tscn<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf
-tutorial.tscn::PackedScene::3007916428778500157::1752173793::0::1::::<><>::res://tutorial/Scripts/tutorial.gd<>uid://dm78rlk8msoqr::::res://assets/backgrounds/menu-rooms.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://pnqwurhc8457::::res://assets/buttons/icon-store.png<>uid://2tk2kav6s7pa::::res://assets/icons/icon activity.png<>uid://3ctwbge6f7ur::::res://assets/buttons/Vector.png<>uid://chwtc0ectg0pj::::res://assets/icons/aviao.png<>uid://dqanm1fmjmcp0::::res://assets/icons/icon-kgem.png<>uid://dnnawuio3n54y::::res://assets/termometro.png<>uid://db2ayu2hawd7a::::res://assets/icons/info-mini-tutorial.png
-::res://tutorial/Scripts/::1752173793
-tutorial.gd::GDScript::-1::1752173793::0::1::::<>Node2D<>::
+tutorial.tscn::PackedScene::3007916428778500157::1753308421::0::1::::<><>::res://tutorial/Scripts/tutorial.gd<>uid://dm78rlk8msoqr::::res://assets/backgrounds/menu-rooms.png<>uid://x68u5rsd0n4f::::res://assets/fonts/Bungee-Regular.ttf<>uid://pnqwurhc8457::::res://assets/buttons/icon-store.png<>uid://2tk2kav6s7pa::::res://assets/icons/icon activity.png<>uid://3ctwbge6f7ur::::res://assets/buttons/Vector.png<>uid://chwtc0ectg0pj::::res://assets/icons/aviao.png<>uid://dqanm1fmjmcp0::::res://assets/icons/icon-kgem.png<>uid://dnnawuio3n54y::::res://assets/termometro.png<>uid://db2ayu2hawd7a::::res://assets/icons/info-mini-tutorial.png
+::res://tutorial/Scripts/::1752180859
+tutorial.gd::GDScript::-1::1752180859::0::1::::<>Node2D<>::

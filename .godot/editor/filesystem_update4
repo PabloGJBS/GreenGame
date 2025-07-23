@@ -1,27 +1,15 @@
 res://Menu/Scenes/menu_start.tscn
+res://activity/scripts/GreenRect.gd
+res://activity/scripts/painel_activity.gd
 res://Credits/Creditis.tscn
 res://GameOver/Lost.tscn
-res://GameOver/Lost.gd
-res://GameOver/Won.gd
 res://GameOver/Won.tscn
-res://Credits/credits.gd
-res://Data/Perguntas/Perguntas Sustentabilidade - Sheet1.Resposta.translation
-res://Data/Mapa/Lista de atividades - Mapa.activities.translation
-res://Data/Mapa/Lista de atividades - Mapa.conections.translation
-res://Data/Mapa/Lista de atividades - Mapa.position x.translation
-res://Data/Mapa/Lista de atividades - Mapa.position y.translation
-res://Data/Lista de atividades/Lista de atividades - ALL.482.translation
-res://Data/Lista de atividades/Lista de atividades - ALL.120.translation
-res://Data/Lista de atividades/Lista de atividades - ALL.1009.translation
-res://Data/Lista de atividades/Lista de atividades - ALL.51.translation
-res://Data/Lista de atividades/Lista de atividades - ALL.7.translation
-res://Data/Jornal/Terra/Jornal (cartas da terra + sorte) - Copy of cartas da Terra.Story.translation
-res://Data/Jornal/Terra/Jornal (cartas da terra + sorte) - Copy of cartas da Terra.Consequence coins.translation
-res://Data/Jornal/Terra/Jornal (cartas da terra + sorte) - Copy of cartas da Terra.Condition coins current city.translation
-res://Data/Jornal/Terra/Jornal (cartas da terra + sorte) - Copy of cartas da Terra.Consequence temperature (for all).translation
-res://Data/Jornal/Sorte/Jornal (cartas da terra + sorte) - Copy of cartas da Sorte.Consequence coins.translation
-res://Data/Jornal/Sorte/Jornal (cartas da terra + sorte) - Copy of cartas da Sorte.Condition coins current city.translation
-res://Data/Jornal/Sorte/Jornal (cartas da terra + sorte) - Copy of cartas da Sorte.Consequence temperature (for all).translation
-res://Menu/Scripts/menu_start.gd
 res://tutorial/Scenes/tutorial.tscn
-res://tutorial/Scripts/tutorial.gd
+res://MiniGames/Restaurant/restaurant.tscn
+res://main/scene/main.tscn
+res://Alerts/minigame_restaurant_tutorial.tscn
+res://activity/scenes/painel_activity.tscn
+res://activity/scenes/GreenRect.tscn
+res://main/scripts/main.gd
+res://activity/scripts/ActivityClass.gd
+res://player/scripts/Player.gd

@@ -9,8 +9,8 @@ var numQuestActivity : int
 var rewardCoins : int
 var rewardKnowledgeGems : int
 var temperatureRise : float
-var timeToReady : int
-var timeLeft : Timer
+var rounds : int
+var roundLeft : int
 var rewardStory : String
 var city : String
 var available : bool = true
@@ -25,7 +25,7 @@ func _init(
 		p_rewardCoins : int,
 		p_rewardKnowledgeGems : int,
 		p_temperatureRise : float,
-		p_timeToReady : int,
+		p_rounds : int,
 		p_rewardStory : String,
 		p_city : String,
 	):
@@ -36,22 +36,16 @@ func _init(
 	self.rewardCoins = p_rewardCoins
 	self.rewardKnowledgeGems = p_rewardKnowledgeGems
 	self.temperatureRise = p_temperatureRise
-	self.timeToReady = p_timeToReady
+	self.rounds = p_rounds
 	self.rewardStory = p_rewardStory
 	self.city = p_city
-	self.timeLeft = Timer.new()
-	self.timeLeft.wait_time = timeToReady
-	self.timeLeft.connect("timeout", timeLefTimeOut)
-	self.timeLeft.one_shot = true
-	add_child(timeLeft)
+	self.roundLeft = p_rounds
 	
-func timeLefTimeOut():
-	print("timeout da atividade")
-	activityFinished.emit(self)
+	
+func getRoundLeftInt():
+	return int(roundLeft)
 
-func startTimer():
-	self.timeLeft.start()
-
-func getTimeLeftInt():
-	return int(timeLeft.time_left)
-
+func updateRoundActivity():
+	roundLeft -= 1
+	if roundLeft <= 0:
+		activityFinished.emit(self)

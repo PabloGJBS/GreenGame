@@ -55,6 +55,9 @@ func setplayercurrentCity(value):
 	self.position = playercurrentCity.positionMap
 	playerChangedCity.emit(self)
 	
+func updatePlayerRoundActivities():
+	for activity in activitiesPlayer:
+		activity.updateRoundActivity()
 
 func getActivitiesPlayer():
 	return activitiesPlayer
@@ -62,7 +65,6 @@ func getActivitiesPlayer():
 func addActivityPlayer(activity):
 	activitiesPlayer.append(activity)
 	add_child(activity)
-	activity.startTimer()
 	activity.connect("activityFinished", activityFinishedAlertMain)
 
 func activityFinishedAlertMain (activity : Activity):
